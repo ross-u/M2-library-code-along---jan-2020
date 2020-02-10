@@ -1,0 +1,15 @@
+<h1> {{ book.title}}</h1>
+
+<span> Written by:
+
+  {{#each book.author}}
+  {{this.name}} {{this.lastName}}
+  {{/each}}
+
+</span>
+
+<p>Description: {{ book.description}}</p>
+
+<p>Rating: {{book.rating}}/10 </p>
+
+<a class="return-button" href="/books">Return</a>
